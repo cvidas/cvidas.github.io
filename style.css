@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&dsiplay=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(219, 186, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0px 55px rgb(0, 0, 0);
+    border: 0.5px solid #fff;
+}
+
+.container .left_side {
+    position: relative;
+    background: rgb(81, 49, 94);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.Image_self {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.Image_self .image_box {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Image_self .image_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(100, 52, 109);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.info h2.title {
+    color: rgb(235, 221, 241);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: -38px 0 20px  -20px;
+    background-color: rgb(144, 103, 184);
+    border-radius: 0 20px 20px 0 ;
+    padding: 0 15px;
+}
+
+.info h2.title span {
+    margin-left: 5px;
+}
+.info p {
+    color: #fff;
+}
+
+.info ul li {
+    list-style: none;
+}
+
+.info.education ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.info.education h5 {
+    color: rgb(216, 156, 203);
+    font-weight: 600;
+    font-size: large;
+}
+
+.info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.info.education h4 {
+    color: rgb(214, 214, 214);
+    font-weight: 500;
+}
+
+.info.language ul li {
+    margin-top: 20px;
+}
+
+.info.language ul  li span {
+    color: rgb(216, 156, 203);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:  rgb(185, 167, 196);
+    display: block;
+    margin-top: 5px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+.info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(151, 42, 165);
+}
+
+.info.interest .con {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    bottom: 50px;
+}
+
+.cir_child {
+    position: relative;
+    background-color: rgb(144, 103, 184);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3.title {
+    position: relative;
+    color: rgb(235, 221, 241);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.1em;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.interest .hob_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest .hob_icon ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.interest .hob_icon ul li {
+    list-style: none;
+    margin: 40px;
+    color: rgb(185, 167, 196);
+    font-size: 40px;
+    padding: 10px;
+    background-color: rgb(145, 40, 163);
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.container .right_side {
+    position: relative;
+    background: white;
+    padding: 30px;
+}
+
+.top_right {
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.name h2 {
+    color: rgb(81, 49, 94);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.name h2:first-child {
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+.name span {
+    font-size: 0.4em;
+    font-weight: 400;
+}
+
+.contact_info {
+    margin-top: 10px;
+    padding: 20px;
+}
+.contact_info ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact_info ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contact_info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: rgb(81, 49, 94);
+}
+
+.contact_info ul li .text {
+    color: rgb(81, 49, 94);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.about {
+    margin: 20px 0;
+    border: 1px solid rgb(81, 49, 94);
+    border-radius: 0 30px 0 0;
+    overflow: hidden;
+}
+
+.title2 {
+    color: rgb(221, 188, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px; 
+    background-color: rgb(81, 49, 94);
+    text-indent: 20px;
+    border-radius: 0 20px;
+}
+
+p {
+    color:black
+}
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color:rgb(68, 33, 10);
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color:rgb(151, 75, 25);
+    font-size: 16px;
+}
+
+.about .box .text ul {
+    margin-left: 20px;
+}
+
+.about .box .text ul li {
+    list-style: none;
+    display: flex;
+    align-items:baseline;
+    margin: 5px;
+}
+
+.about .box .text ul li span {
+    margin-left: 20px;
+}
+
+.skills {
+    padding: 0 20px
+}
+.skills .box {
+    position: relative;
+    width: 100%;
+    line-height: 2.5em;
+    margin-top: 10px;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: rgb(173, 126, 64);
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background: pink;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: purple;
+}
+
+.social {
+    padding-top: 20px;
+    position: relative;
+}
+
+h2.socmed {
+    color: rgb(46, 3, 59);
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.social_list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.social_list ul li {
+    list-style: none;
+}
+
+.social_list ul li i {
+    color: purple;
+    font-size: 1em;
+}
+
+.social_list ul li span {
+    font-size: 0.8em;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact_info ul { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .about .box {
+        flex-direction: column;
+    }
+    .about .box .year_company {
+        margin-bottom: 5px;
+    }
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact_info ul li .icon {
+        display: block;
+    }
+    .container {
+        margin: 20px;
+    }
+}

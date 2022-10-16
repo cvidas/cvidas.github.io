@@ -147,6 +147,7 @@ body {
     background-color: rgb(100, 52, 109);
     border-radius: 10px;
 }
+
 .interest .con {
     width: 100%;
     height: 200px;
@@ -154,7 +155,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 .circle {
     display: flex;

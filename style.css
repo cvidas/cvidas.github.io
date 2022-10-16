@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 500px;
 }
 
 .container {
@@ -39,7 +40,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 25px;
 }
 
 .Image_self .image_box {
@@ -54,12 +54,9 @@ body {
 }
 
 .Image_self .image_box img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 50%;
 }
 
 .info {
@@ -143,8 +140,14 @@ body {
     height: 100%;
     background: rgb(151, 42, 165);
 }
-
-.info.interest .con {
+.interest {
+    
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(100, 52, 109);
+    border-radius: 10px;
+}
+.interest .con {
     width: 100%;
     height: 200px;
     display: flex;
@@ -188,7 +191,6 @@ h3.title {
     border-radius: 50px;
 }
 
-
 .interest .hob_icon {
     display: flex;
     align-items: center;
@@ -229,7 +231,7 @@ h3.title {
     grid-template-columns: 2fr 2fr;
     align-items: center;
     margin: 30px 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(81, 49, 94, 0.534);
 }
 
 .name h2 {
@@ -252,7 +254,7 @@ h3.title {
 }
 
 .contact_info {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 20px;
 }
 .contact_info ul {
@@ -282,7 +284,7 @@ h3.title {
 
 
 .about {
-    margin: 20px 0;
+    margin: 30px 0;
     border: 1px solid rgb(81, 49, 94);
     border-radius: 0 30px 0 0;
     overflow: hidden;
@@ -314,14 +316,19 @@ p {
 
 .about .box .year_company h5 {
     text-transform: uppercase;
-    color:rgb(68, 33, 10);
+    color:rgb(55, 10, 68);
     font-weight: 600;
+    font-size: 0.9em;
+}
+
+.about .box .year_company h6 {
+    color: rgba(91, 64, 112, 0.74);
 }
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color:rgb(151, 75, 25);
-    font-size: 16px;
+    color:rgb(151, 25, 145);
+    font-size: 1.2em;
 }
 
 .about .box .text ul {
@@ -344,44 +351,42 @@ p {
 }
 .skills .box {
     position: relative;
-    width: 100%;
-    line-height: 2.5em;
-    margin-top: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
 }
 
 .skills .box h4 {
     text-transform: uppercase;
-    color: rgb(173, 126, 64);
-    font-weight: 500;
+    color: rgb(81, 49, 94);
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-left: 20px;
 }
 
-.skills .box .percent {
-    position: relative;
-    width: 80%;
-    height: 10px;
-    background: pink;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-left: 50px;
+.skills .box .progress {
+    border: 1px solid rgb(81, 49, 94);
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 50px;
 }
-
-.skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: purple;
+.skills .box .progress i {
+    color: rgb(81, 49, 94);
 }
 
 .social {
     padding-top: 20px;
     position: relative;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(172, 131, 211, 0.199);
 }
 
 h2.socmed {
     color: rgb(46, 3, 59);
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .social_list ul {
@@ -400,39 +405,33 @@ h2.socmed {
 
 .social_list ul li span {
     font-size: 0.8em;
+    font-weight: 600;
+    padding-left: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .container {
         margin: 50px;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .interest ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    }   
     .contact_info ul { 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (max-width: 500px) {
-    .about .box {
-        flex-direction: column;
-    }
-    .about .box .year_company {
-        margin-bottom: 5px;
-    }
-    .interest ul {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 800px) {
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
     }
-    .contact_info ul li .icon {
-        display: block;
+    .skills .box .progress {
+        margin-left: 50px;
     }
     .container {
         margin: 20px;
+    }
+    .social_list ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

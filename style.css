@@ -147,7 +147,6 @@ body {
     background-color: rgb(100, 52, 109);
     border-radius: 10px;
 }
-
 .interest .con {
     width: 100%;
     height: 200px;
@@ -155,6 +154,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 .circle {
     display: flex;
@@ -248,14 +248,19 @@ h3.title {
     font-weight: 600;
 }
 
+.name h2:nth-child(2) {
+    font-size: 1.9em;
+    color: rgb(110, 97, 114);
+}
+
 .name span {
     font-size: 0.4em;
     font-weight: 400;
 }
 
 .contact_info {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
 }
 .contact_info ul {
     position: relative;
@@ -300,8 +305,13 @@ h3.title {
     border-radius: 0 20px;
 }
 
-p {
-    color:black
+.title2 span h6 {
+    font-size: 0.53em;
+    text-transform: none;
+    color: rgba(213, 175, 253, 0.719);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
 }
 
 .about .box {
@@ -330,7 +340,6 @@ p {
     color:rgb(151, 25, 145);
     font-size: 1.2em;
 }
-
 .about .box .text ul {
     margin-left: 20px;
 }
@@ -340,6 +349,10 @@ p {
     display: flex;
     align-items:baseline;
     margin: 5px;
+}
+
+.about .box .text ul li i {
+    color: rgb(68, 25, 110);
 }
 
 .about .box .text ul li span {

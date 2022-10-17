@@ -408,6 +408,7 @@ h2.socmed {
 
 .social_list ul li {
     list-style: none;
+    cursor: pointer;
 }
 
 .social_list ul li i {
